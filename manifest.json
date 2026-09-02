@@ -1,0 +1,56 @@
+{
+  "manifest_version": 2,
+  "name": "FoxFlow: Ad Block + QOL + Split View",
+  "version": "1.3.0",
+  "description": "Lightweight ad and tracker blocking, quality-of-life tools, and tiled 3/4-tab layouts for Firefox.",
+  "permissions": [
+    "alarms",
+    "unlimitedStorage",
+    "storage",
+    "tabs",
+    "clipboardWrite",
+    "webRequest",
+    "webRequestBlocking",
+    "<all_urls>"
+  ],
+  "background": {
+    "scripts": [
+      "background.js"
+    ]
+  },
+  "browser_action": {
+    "default_title": "FoxFlow",
+    "default_icon": {
+      "16": "icon.jpg",
+      "32": "icon.jpg"
+    }
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "<all_urls>"
+      ],
+      "js": [
+        "content.js"
+      ],
+      "css": [
+        "content.css"
+      ],
+      "run_at": "document_start"
+    }
+  ],
+  "options_ui": {
+    "page": "options.html",
+    "open_in_tab": true
+  },
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "foxflow@example.local",
+      "strict_min_version": "109.0"
+    }
+  },
+  "icons": {
+    "48": "icon.jpg",
+    "96": "icon.jpg"
+  }
+}
