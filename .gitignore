@@ -1,0 +1,43 @@
+# Packaged extension builds
+*.zip
+*.xpi
+web-ext-artifacts/
+build/
+dist/
+
+# Dependencies and tool caches
+node_modules/
+.cache/
+.npm/
+
+# Environment and local configuration
+.env
+.env.*
+!.env.example
+
+# Editor settings
+.vscode/
+.idea/
+*.code-workspace
+
+# Operating system files
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Logs and temporary files
+*.log
+*.tmp
+*.temp
+*.swp
+*.swo
+*~
+
+# Test and coverage output
+coverage/
+.nyc_output/
+
+# Optional local icon override
+# Uncomment this if you do not want to commit your custom icon.
+# icon.jpg
