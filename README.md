@@ -207,4 +207,4 @@ Current version
 1.3.1
 This release adds repository housekeeping and complete setup, architecture, usage, privacy, permissions, packaging, development, and troubleshooting documentation. Functional extension behavior is unchanged from version 1.3.0.
 License
-No license is included by default. Add a `LICENSE` file before publishing the project so users know whether they may copy, modify, or redistribute the source. Imported sounds and images remain subject to their own licenses.
+No license is included by default. Add a `LICENSE` Imported sounds and images remain subject to their own licenses.
